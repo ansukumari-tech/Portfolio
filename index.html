@@ -25,7 +25,7 @@
     --red:#E0644F;
     --font-mono:'IBM Plex Mono', ui-monospace, monospace;
     --font-sans:'IBM Plex Sans', system-ui, sans-serif;
-    --maxw:1080px;
+    --maxw:1480px;
   }
 
   *{box-sizing:border-box;}
@@ -56,7 +56,8 @@
     border-radius:2px;
   }
 
-  .wrap{max-width:var(--maxw); margin:0 auto; padding:0 28px;}
+  .wrap{width:100%; margin:0 auto; padding:0 clamp(24px, 5vw, 90px);}
+  @media (min-width:1800px){ .wrap{max-width:1800px;} }
 
   /* ---------- Scanline texture ---------- */
   body::before{
@@ -82,10 +83,11 @@
     border-bottom:1px solid var(--line);
   }
   .nav-inner{
-    max-width:var(--maxw); margin:0 auto; padding:16px 28px;
+    width:100%; margin:0 auto; padding:16px clamp(24px, 5vw, 90px);
     display:flex; align-items:center; justify-content:space-between;
     font-family:var(--font-mono); font-size:13px;
   }
+  @media (min-width:1800px){ .nav-inner{max-width:1800px;} }
   .nav-logo{color:var(--text); text-decoration:none; letter-spacing:0.02em;}
   .nav-logo .prompt{color:var(--mint);}
   .nav-logo .cursor{
@@ -113,10 +115,11 @@
 
   /* ---------- Hero ---------- */
   .hero{
-    max-width:var(--maxw); margin:0 auto; padding:96px 28px 72px;
+    width:100%; margin:0 auto; padding:96px clamp(24px, 5vw, 90px) 72px;
     min-height:min(70vh, 560px);
     display:flex; flex-direction:column; justify-content:center;
   }
+  @media (min-width:1800px){ .hero{max-width:1800px;} }
   .boot-log{
     font-family:var(--font-mono); font-size:12.5px; color:var(--text-faint);
     margin:0 0 22px; min-height:1.4em;
