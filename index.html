@@ -300,11 +300,11 @@
   <div class="hero">
     <p class="boot-log" id="bootLog" aria-hidden="true"></p>
     <h1>Ansu Kumari<span class="cursor2" aria-hidden="true"></span></h1>
-    <p class="role">SDE · Python Developer · AI/NLP Engineer</p>
+    <p class="role">Software Engineer · Backend &amp; Microservices · NLP</p>
     <p class="pitch">
-      B.Tech graduate in <strong>Computer Science &amp; Engineering (Data Science)</strong> from Brainware
-      University. I build things that turn messy, real-world signal — tweets, HTTP requests, sales data —
-      into something a system, or a person, can act on.
+      Recent <strong>Computer Science &amp; Engineering (Data Science)</strong> graduate from Brainware
+      University, building RESTful backend systems, microservices, automation tools, and full-stack
+      applications — with a strong foundation in DSA, OOP, DBMS, and Operating Systems.
     </p>
     <div class="cta-row">
       <a class="btn btn-primary" href="mailto:ansuvermakri37@gmail.com">Email me →</a>
@@ -327,15 +327,15 @@
       <div class="whoami-grid">
         <div>
           <p>
-            I'm a recent graduate who spent the last two years alternating between two questions:
-            <em>what is this data actually saying</em>, and <em>where can this system be broken</em>.
-            That mix is why my work spans an NLP sentiment pipeline, a full BI dashboard build, and
-            a multi-threaded SQL injection scanner used against real client applications.
+            I'm a recent graduate with hands-on experience building RESTful backend systems,
+            microservices, automation tools, and full-stack applications, backed by a strong
+            foundation in Data Structures &amp; Algorithms, OOP, DBMS, and Operating Systems.
           </p>
           <p>
-            I like backend and data work that ships — REST APIs with real auth, CI/CD that actually
-            runs, dashboards a stakeholder would trust. Currently looking for SDE, Python developer,
-            or AI engineer roles where I can keep building at that intersection.
+            I've built a JWT-secured, containerized backend service using Flask, Django, PostgreSQL,
+            Docker, and GitHub Actions, alongside an NLP application processing 17,000+ records.
+            Currently seeking an entry-level Software Engineering role where I can keep building
+            at that intersection of backend and data.
           </p>
         </div>
         <table class="field-table">
@@ -388,13 +388,33 @@
 
         <div class="proj-card">
           <div class="proj-top">
+            <div class="proj-name">Cloud User Management</div>
+            <span class="proj-tag">Microservices</span>
+          </div>
+          <div class="proj-stack">Python · Flask · Django · DRF · JWT · PostgreSQL · SQLAlchemy · Docker · CI/CD</div>
+          <ul class="proj-desc">
+            <li>Designed and built a microservices-based user management system (Flask/SQLAlchemy/PostgreSQL auth service + stateless Django REST Framework admin service) behind an nginx API gateway, with JWT authentication and RBAC enforced independently at each service.</li>
+            <li>Applied OOP and modular design principles — dedicated service-layer classes, custom auth/permission classes, typed exceptions — decoupling business logic from HTTP handling for maintainable, testable code.</li>
+            <li>Containerized services with Docker/docker-compose and built an automated CI/CD pipeline in GitHub Actions, testing each service against live PostgreSQL and building production images on every merge.</li>
+          </ul>
+          <div class="proj-metrics">
+            <div class="pm"><b>RBAC</b>access control</div>
+            <div class="pm"><b>CI/CD</b>auto deploy</div>
+          </div>
+          <div class="proj-links">
+            <a href="#" target="_blank" rel="noopener">Source →</a>
+          </div>
+        </div>
+
+        <div class="proj-card">
+          <div class="proj-top">
             <div class="proj-name">TweetLens</div>
             <span class="proj-tag">NLP</span>
           </div>
-          <div class="proj-stack">Python · VADER · TextBlob · Streamlit</div>
+          <div class="proj-stack">Python · NLP · VADER · TextBlob · Streamlit</div>
           <ul class="proj-desc">
-            <li>Sentiment &amp; emotion pipeline over 17,000+ tweets using a hybrid VADER + TextBlob model, served through a Streamlit dashboard.</li>
-            <li>Added multi-label crime classification (phishing, scam, fraud) across 6 categories, with word-cloud and heatmap visualizations for pattern insight.</li>
+            <li>Engineered an end-to-end NLP pipeline to classify sentiment and emotion across 17,000+ tweets, using a hybrid VADER + TextBlob model, achieving ~80% accuracy with &lt;2-second inference time.</li>
+            <li>Implemented multi-label crime-pattern classification across 6 categories, including phishing, scams, and fraud, and deployed an interactive Streamlit dashboard for real-time data visualization and behavioral analysis.</li>
           </ul>
           <div class="proj-metrics">
             <div class="pm"><b>~80%</b>accuracy</div>
@@ -403,25 +423,6 @@
           </div>
           <div class="proj-links">
             <a href="#" target="_blank" rel="noopener">Live demo →</a>
-            <a href="#" target="_blank" rel="noopener">Source →</a>
-          </div>
-        </div>
-
-        <div class="proj-card">
-          <div class="proj-top">
-            <div class="proj-name">Cloud User Management System</div>
-            <span class="proj-tag">Backend</span>
-          </div>
-          <div class="proj-stack">Flask · JWT · PostgreSQL · SQLAlchemy · Docker · CI/CD</div>
-          <ul class="proj-desc">
-            <li>Cloud-ready RESTful backend with JWT authentication and role-based access control for secure user management workflows.</li>
-            <li>API layer built on SQLAlchemy + PostgreSQL, containerized with Docker and shipped through a GitHub Actions CI/CD pipeline to a cloud platform.</li>
-          </ul>
-          <div class="proj-metrics">
-            <div class="pm"><b>RBAC</b>access control</div>
-            <div class="pm"><b>CI/CD</b>auto deploy</div>
-          </div>
-          <div class="proj-links">
             <a href="#" target="_blank" rel="noopener">Source →</a>
           </div>
         </div>
@@ -438,33 +439,44 @@
         <div class="skill-group">
           <div class="skill-key">Languages</div>
           <div class="chip-row">
-            <span class="chip">Python</span><span class="chip">C++</span><span class="chip">JavaScript</span>
-            <span class="chip">SQL</span><span class="chip">HTML</span><span class="chip">CSS</span>
+            <span class="chip">Python</span><span class="chip">Java</span><span class="chip">C++</span>
+            <span class="chip">SQL</span><span class="chip">JavaScript</span><span class="chip">HTML</span><span class="chip">CSS</span>
           </div>
         </div>
         <div class="skill-group">
-          <div class="skill-key">Frameworks &amp; Libraries</div>
+          <div class="skill-key">CS Fundamentals</div>
           <div class="chip-row">
-            <span class="chip">Flask</span><span class="chip">React.js</span><span class="chip">Node.js</span>
-            <span class="chip">Express.js</span><span class="chip">SQLAlchemy</span><span class="chip">REST APIs</span>
-            <span class="chip">Scikit-learn</span><span class="chip">Pandas</span><span class="chip">NumPy</span>
-            <span class="chip">Matplotlib</span><span class="chip">Tailwind CSS</span><span class="chip">JWT</span>
+            <span class="chip">Data Structures &amp; Algorithms</span><span class="chip">OOP</span>
+            <span class="chip">DBMS</span><span class="chip">Operating Systems</span>
           </div>
         </div>
         <div class="skill-group">
-          <div class="skill-key">AI / Data</div>
+          <div class="skill-key">Backend &amp; Frameworks</div>
           <div class="chip-row">
-            <span class="chip">Machine Learning</span><span class="chip">NLP</span>
-            <span class="chip">Sentiment Analysis</span><span class="chip">Text Classification</span>
-            <span class="chip">Data Preprocessing</span><span class="chip">Feature Engineering</span>
+            <span class="chip">Flask</span><span class="chip">Django</span><span class="chip">Django REST Framework</span>
+            <span class="chip">Node.js</span><span class="chip">Express.js</span><span class="chip">React.js</span>
+            <span class="chip">SQLAlchemy</span><span class="chip">JWT Authentication</span><span class="chip">REST APIs</span>
           </div>
         </div>
         <div class="skill-group">
-          <div class="skill-key">Tools &amp; Infra</div>
+          <div class="skill-key">Databases</div>
           <div class="chip-row">
-            <span class="chip">Git / GitHub</span><span class="chip">Docker</span><span class="chip">GitHub Actions</span>
-            <span class="chip">PostgreSQL</span><span class="chip">Postman</span><span class="chip">PyTest</span>
-            <span class="chip">Kubernetes (basic)</span><span class="chip">AWS fundamentals</span>
+            <span class="chip">PostgreSQL</span><span class="chip">MySQL</span>
+          </div>
+        </div>
+        <div class="skill-group">
+          <div class="skill-key">Cloud &amp; DevOps</div>
+          <div class="chip-row">
+            <span class="chip">Docker</span><span class="chip">Docker Compose</span><span class="chip">Kubernetes (Basic)</span>
+            <span class="chip">AWS Fundamentals</span><span class="chip">CI/CD (GitHub Actions)</span>
+            <span class="chip">Git</span><span class="chip">GitHub</span>
+          </div>
+        </div>
+        <div class="skill-group">
+          <div class="skill-key">Testing &amp; Tools</div>
+          <div class="chip-row">
+            <span class="chip">PyTest</span><span class="chip">Postman</span>
+            <span class="chip">Unit Testing</span><span class="chip">Debugging</span>
           </div>
         </div>
       </div>
