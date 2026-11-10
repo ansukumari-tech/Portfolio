@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en" data-theme="aurora">
+<html lang="en">
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -18,7 +18,7 @@
 <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,400&family=JetBrains+Mono:wght@400;500;600;700&display=swap" rel="stylesheet">
 
 <style>
-  /* ================= THEME DEFINITIONS ================= */
+  /* ================= CORE DESIGN SYSTEM ================= */
   :root {
     --transition-speed: 0.25s;
     --radius-lg: 16px;
@@ -27,10 +27,8 @@
     --font-sans: 'Plus Jakarta Sans', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
     --font-mono: 'JetBrains Mono', ui-monospace, SFMono-Regular, Menlo, monospace;
     --maxw: 1200px;
-  }
 
-  /* Theme 1: Midnight Aurora (Default) */
-  html[data-theme="aurora"] {
+    /* Signature Midnight Aurora Palette */
     --bg: #080C15;
     --bg-alt: #0D1322;
     --surface: rgba(18, 25, 42, 0.72);
@@ -49,72 +47,6 @@
     --badge-text: #818CF8;
     --badge-border: rgba(99, 102, 241, 0.28);
     --highlight: #F59E0B;
-  }
-
-  /* Theme 2: Cyberpunk Neon */
-  html[data-theme="cyberpunk"] {
-    --bg: #0A0713;
-    --bg-alt: #130E24;
-    --surface: rgba(26, 18, 48, 0.75);
-    --surface-solid: #1A1230;
-    --surface-hover: rgba(40, 28, 74, 0.88);
-    --border: rgba(236, 72, 153, 0.18);
-    --border-hover: rgba(6, 182, 212, 0.6);
-    --text: #FDF4FF;
-    --text-muted: #D8B4FE;
-    --text-faint: #86198F;
-    --primary: #EC4899;
-    --primary-gradient: linear-gradient(135deg, #EC4899 0%, #06B6D4 100%);
-    --accent: #06B6D4;
-    --accent-glow: rgba(236, 72, 153, 0.3);
-    --badge-bg: rgba(236, 72, 153, 0.15);
-    --badge-text: #F472B6;
-    --badge-border: rgba(236, 72, 153, 0.35);
-    --highlight: #FBBF24;
-  }
-
-  /* Theme 3: Emerald Tech */
-  html[data-theme="emerald"] {
-    --bg: #06110D;
-    --bg-alt: #0C1E17;
-    --surface: rgba(14, 34, 26, 0.75);
-    --surface-solid: #0E221A;
-    --surface-hover: rgba(22, 51, 40, 0.85);
-    --border: rgba(52, 211, 153, 0.14);
-    --border-hover: rgba(52, 211, 153, 0.5);
-    --text: #F0FDF4;
-    --text-muted: #86EFAC;
-    --text-faint: #22C55E;
-    --primary: #10B981;
-    --primary-gradient: linear-gradient(135deg, #10B981 0%, #06B6D4 100%);
-    --accent: #34D399;
-    --accent-glow: rgba(52, 211, 153, 0.25);
-    --badge-bg: rgba(16, 185, 129, 0.14);
-    --badge-text: #34D399;
-    --badge-border: rgba(16, 185, 129, 0.3);
-    --highlight: #F59E0B;
-  }
-
-  /* Theme 4: Minimal Slate */
-  html[data-theme="slate"] {
-    --bg: #0B0E14;
-    --bg-alt: #121722;
-    --surface: rgba(22, 28, 41, 0.72);
-    --surface-solid: #161C29;
-    --surface-hover: rgba(33, 41, 59, 0.85);
-    --border: rgba(255, 255, 255, 0.1);
-    --border-hover: rgba(255, 255, 255, 0.35);
-    --text: #FFFFFF;
-    --text-muted: #94A3B8;
-    --text-faint: #64748B;
-    --primary: #38BDF8;
-    --primary-gradient: linear-gradient(135deg, #38BDF8 0%, #E2E8F0 100%);
-    --accent: #94A3B8;
-    --accent-glow: rgba(56, 189, 248, 0.2);
-    --badge-bg: rgba(255, 255, 255, 0.08);
-    --badge-text: #E2E8F0;
-    --badge-border: rgba(255, 255, 255, 0.16);
-    --highlight: #FBBF24;
   }
 
   /* ================= RESET & CORE ================= */
@@ -275,37 +207,6 @@
     gap: 12px;
   }
 
-  /* Theme Switcher Dropdown / Pills */
-  .theme-selector {
-    display: flex;
-    align-items: center;
-    background: var(--surface-solid);
-    border: 1px solid var(--border);
-    border-radius: 30px;
-    padding: 3px 6px;
-    gap: 4px;
-  }
-  .theme-btn {
-    background: transparent;
-    border: none;
-    cursor: pointer;
-    padding: 5px 8px;
-    border-radius: 20px;
-    font-size: 12px;
-    font-weight: 600;
-    color: var(--text-muted);
-    transition: all 0.15s;
-    display: flex;
-    align-items: center;
-    gap: 4px;
-  }
-  .theme-btn:hover { color: var(--text); }
-  .theme-btn.active {
-    background: var(--primary);
-    color: #FFFFFF;
-    box-shadow: 0 2px 8px var(--accent-glow);
-  }
-
   .nav-toggle {
     display: none;
     background: var(--surface-solid);
@@ -320,7 +221,6 @@
   @media (max-width: 860px) {
     .nav-center { display: none; }
     .nav-toggle { display: block; }
-    .theme-selector span.label { display: none; }
     .nav-center.open {
       display: flex;
       flex-direction: column;
@@ -1215,14 +1115,9 @@
       </ul>
 
       <div class="nav-actions">
-        <!-- Live Theme Switcher -->
-        <div class="theme-selector" role="radiogroup" aria-label="Portfolio theme">
-          <button class="theme-btn active" data-set-theme="aurora" title="Midnight Aurora Theme" aria-label="Midnight Aurora">🌌 Aurora</button>
-          <button class="theme-btn" data-set-theme="cyberpunk" title="Cyberpunk Neon Theme" aria-label="Cyberpunk Neon">⚡ Cyber</button>
-          <button class="theme-btn" data-set-theme="emerald" title="Emerald Tech Theme" aria-label="Emerald Tech">🌿 Emerald</button>
-          <button class="theme-btn" data-set-theme="slate" title="Minimal Slate Theme" aria-label="Minimal Slate">🪐 Slate</button>
-        </div>
-
+        <a class="btn btn-primary btn-sm" href="https://drive.google.com/file/d/1n7fYY60irgldAEW0-G3lc5x59Nrj8ZJ7/view?usp=drive_link" target="_blank" rel="noopener">
+          Résumé ↗
+        </a>
         <button class="nav-toggle" id="navToggle" aria-label="Toggle navigation menu" aria-expanded="false">☰</button>
       </div>
     </div>
@@ -1956,25 +1851,7 @@
 <div id="toast" role="status" aria-live="polite">Copied to clipboard!</div>
 
 <script>
-  // ================= THEME SWITCHER LOGIC =================
-  const themeBtns = document.querySelectorAll('[data-set-theme]');
-  const savedTheme = localStorage.getItem('ak_portfolio_theme') || 'aurora';
-  setTheme(savedTheme);
 
-  themeBtns.forEach(btn => {
-    btn.addEventListener('click', () => {
-      const theme = btn.getAttribute('data-set-theme');
-      setTheme(theme);
-      localStorage.setItem('ak_portfolio_theme', theme);
-    });
-  });
-
-  function setTheme(name) {
-    document.documentElement.setAttribute('data-theme', name);
-    themeBtns.forEach(b => {
-      b.classList.toggle('active', b.getAttribute('data-set-theme') === name);
-    });
-  }
 
   // ================= MOBILE NAVIGATION =================
   const navToggle = document.getElementById('navToggle');

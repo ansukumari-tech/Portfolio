@@ -11,16 +11,6 @@
 
 ---
 
-## 🎨 Theme Switcher Options
-
-The portfolio includes an interactive live theme switcher in the top navigation bar:
-- 🌌 **Midnight Aurora (Default):** Deep dark canvas with indigo, cyan, and violet ambient glow.
-- ⚡ **Cyberpunk Neon:** High-contrast obsidian with neon pink, cyan, and purple highlights.
-- 🌿 **Emerald Tech:** Deep forest green with mint and emerald accents.
-- 🪐 **Minimal Slate:** Clean steel-gray with icy blue and white highlights.
-
----
-
 ## 💼 Experience & Candidate Positioning
 
 - **Education:** B.Tech in Computer Science & Engineering (Data Science), Brainware University (Aug 2022 – Jun 2026, CGPA: 8.03/10).
