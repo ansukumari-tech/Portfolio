@@ -7,7 +7,7 @@
 [https://ansu-portfolio-ds.netlify.app/](https://ansu-portfolio-ds.netlify.app/)
 
 📄 **Résumé:**  
-[Download Latest PDF](https://drive.google.com/file/d/1n7fYY60irgldAEW0-G3lc5x59Nrj8ZJ7/view?usp=drive_link)
+[Download Latest PDF](https://drive.google.com/file/d/1JN3iVhEnh1cfJLkqYQPh8y1pIIpYGNd9/view?usp=drive_link)
 
 ---
 
