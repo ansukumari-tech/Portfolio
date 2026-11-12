@@ -6,9 +6,6 @@
 🌐 **Live Demo:**  
 [https://ansu-portfolio-ds.netlify.app/](https://ansu-portfolio-ds.netlify.app/)
 
-📄 **Résumé:**  
-[Download Latest PDF](https://drive.google.com/file/d/1JN3iVhEnh1cfJLkqYQPh8y1pIIpYGNd9/view?usp=drive_link)
-
 ---
 
 ## 💼 Experience & Candidate Positioning
