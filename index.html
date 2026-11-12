@@ -3,11 +3,11 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Ansu Kumari — Software Engineer &amp; AI/ML Portfolio</title>
-<meta name="description" content="Portfolio of Ansu Kumari — B.Tech CSE (Data Science) 2026 graduate. Software Engineer, Python Developer, and AI/ML Engineer with Cyber Security internship experience.">
-<meta name="keywords" content="Ansu Kumari, Software Engineer, Python Developer, AI ML Engineer, Fresher Portfolio, Data Science, Microservices, Flask, Django, Docker, 2026 Graduate">
-<meta property="og:title" content="Ansu Kumari — Software Engineer & AI/ML Portfolio">
-<meta property="og:description" content="Explore microservices architectures, NLP sentiment platforms, time-series ML models, and security automation tooling.">
+<title>Ansu Kumari — Software Engineer | Python Developer | AI/ML &amp; Data Platform</title>
+<meta name="description" content="Portfolio of Ansu Kumari — 2026 B.Tech CSE (Data Science) graduate. 8 months Data & Backend Platform Intern at Betterhalf.ai (AWS, Snowflake, DBT, Python), 6 months Cyber Security Intern at Techno Exponent.">
+<meta name="keywords" content="Ansu Kumari, Software Engineer, Python Developer, AI ML Engineer, Data Platform, Snowflake, DBT, AWS, Microservices, Flask, Django, Betterhalf.ai, LeetCode">
+<meta property="og:title" content="Ansu Kumari — Software Engineer | Python Developer | AI/ML & Data Platform">
+<meta property="og:description" content="Explore production ELT pipelines, microservices, NLP intelligence platforms, LeetCode achievements (248 solved), and security automation tooling.">
 <meta property="og:type" content="website">
 <meta property="og:url" content="https://ansu-portfolio-ds.netlify.app/">
 
@@ -47,6 +47,8 @@
     --badge-text: #818CF8;
     --badge-border: rgba(99, 102, 241, 0.28);
     --highlight: #F59E0B;
+    --green: #10B981;
+    --green-glow: rgba(16, 185, 129, 0.2);
   }
 
   /* ================= RESET & CORE ================= */
@@ -151,7 +153,7 @@
     position: sticky;
     top: 0;
     z-index: 100;
-    background: rgba(8, 12, 21, 0.82);
+    background: rgba(8, 12, 21, 0.84);
     backdrop-filter: blur(16px);
     -webkit-backdrop-filter: blur(16px);
     border-bottom: 1px solid var(--border);
@@ -187,7 +189,7 @@
 
   .nav-center {
     display: flex;
-    gap: 24px;
+    gap: 22px;
     list-style: none;
     margin: 0;
     padding: 0;
@@ -218,7 +220,7 @@
     cursor: pointer;
   }
 
-  @media (max-width: 860px) {
+  @media (max-width: 900px) {
     .nav-center { display: none; }
     .nav-toggle { display: block; }
     .nav-center.open {
@@ -288,10 +290,20 @@
     color: var(--badge-text);
     border: 1px solid var(--badge-border);
   }
+  .pill-green {
+    border-color: rgba(16, 185, 129, 0.3);
+    color: #34D399;
+    background: rgba(16, 185, 129, 0.1);
+  }
+  .pill-amber {
+    border-color: rgba(245, 158, 11, 0.3);
+    color: #FBBF24;
+    background: rgba(245, 158, 11, 0.1);
+  }
 
   /* ================= HERO SECTION ================= */
   .hero-section {
-    padding: 80px 0 60px;
+    padding: 76px 0 54px;
     position: relative;
   }
   .hero-badge-row {
@@ -299,7 +311,7 @@
     flex-wrap: wrap;
     align-items: center;
     gap: 10px;
-    margin-bottom: 24px;
+    margin-bottom: 22px;
   }
   .live-dot {
     width: 8px;
@@ -315,9 +327,9 @@
   }
 
   .hero-title {
-    font-size: clamp(38px, 6vw, 68px);
+    font-size: clamp(36px, 5.8vw, 66px);
     font-weight: 800;
-    line-height: 1.1;
+    line-height: 1.12;
     letter-spacing: -0.03em;
     margin: 0 0 16px;
   }
@@ -328,41 +340,41 @@
   }
 
   .hero-subhead {
-    font-size: clamp(18px, 2.5vw, 22px);
+    font-size: clamp(17px, 2.3vw, 21px);
     color: var(--text-muted);
     font-weight: 500;
-    margin: 0 0 24px;
-    max-width: 820px;
+    margin: 0 0 20px;
+    max-width: 840px;
   }
-  .hero-subhead strong { color: var(--text); }
 
   .hero-description {
     font-size: 16px;
     color: var(--text-muted);
-    max-width: 760px;
-    margin: 0 0 36px;
-    line-height: 1.7;
+    max-width: 800px;
+    margin: 0 0 34px;
+    line-height: 1.75;
   }
+  .hero-description strong { color: var(--text); }
 
   .hero-cta-row {
     display: flex;
     flex-wrap: wrap;
     gap: 14px;
-    margin-bottom: 56px;
+    margin-bottom: 50px;
   }
 
   /* Quick Facts & Metrics Strip */
   .metrics-strip {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
-    gap: 16px;
+    gap: 14px;
   }
   .metric-card {
     background: var(--surface);
     border: 1px solid var(--border);
     backdrop-filter: blur(12px);
     border-radius: var(--radius-md);
-    padding: 20px;
+    padding: 18px 20px;
     transition: all 0.2s;
   }
   .metric-card:hover {
@@ -371,7 +383,7 @@
     background: var(--surface-hover);
   }
   .metric-num {
-    font-size: 30px;
+    font-size: 28px;
     font-weight: 800;
     letter-spacing: -0.02em;
     line-height: 1.1;
@@ -388,7 +400,7 @@
 
   /* ================= SECTION HEADERS ================= */
   section {
-    padding: 80px 0;
+    padding: 76px 0;
   }
   .section-tag {
     text-transform: uppercase;
@@ -409,16 +421,16 @@
     background: var(--accent);
   }
   .section-title {
-    font-size: clamp(26px, 4vw, 36px);
+    font-size: clamp(26px, 3.8vw, 36px);
     font-weight: 800;
     letter-spacing: -0.02em;
-    margin: 0 0 14px;
+    margin: 0 0 12px;
   }
   .section-subtitle {
     font-size: 16px;
     color: var(--text-muted);
-    max-width: 650px;
-    margin: 0 0 44px;
+    max-width: 700px;
+    margin: 0 0 40px;
   }
 
   /* ================= ABOUT / PROFILE CARD ================= */
@@ -460,7 +472,7 @@
   .specs-header {
     font-size: 16px;
     font-weight: 700;
-    margin-bottom: 20px;
+    margin-bottom: 18px;
     padding-bottom: 12px;
     border-bottom: 1px solid var(--border);
     display: flex;
@@ -470,7 +482,7 @@
   .specs-list {
     display: flex;
     flex-direction: column;
-    gap: 14px;
+    gap: 13px;
     font-size: 13.5px;
   }
   .specs-row {
@@ -478,7 +490,7 @@
     justify-content: space-between;
     gap: 16px;
     border-bottom: 1px dashed rgba(255, 255, 255, 0.06);
-    padding-bottom: 10px;
+    padding-bottom: 9px;
   }
   .specs-row:last-child { border-bottom: none; }
   .spec-label { color: var(--text-faint); font-weight: 500; }
@@ -487,6 +499,11 @@
   .spec-val a:hover { text-decoration: underline; }
 
   /* ================= EXPERIENCE ================= */
+  .experience-timeline {
+    display: flex;
+    flex-direction: column;
+    gap: 26px;
+  }
   .experience-card {
     background: var(--surface);
     border: 1px solid var(--border);
@@ -516,10 +533,10 @@
     align-items: flex-start;
     flex-wrap: wrap;
     gap: 12px;
-    margin-bottom: 18px;
+    margin-bottom: 16px;
   }
   .exp-role-title {
-    font-size: 21px;
+    font-size: 20px;
     font-weight: 700;
     margin-bottom: 4px;
   }
@@ -535,7 +552,7 @@
   }
 
   .exp-bullets {
-    margin: 18px 0 24px;
+    margin: 16px 0 22px;
     padding-left: 0;
     list-style: none;
     font-size: 15px;
@@ -569,6 +586,135 @@
     background: rgba(245, 158, 11, 0.1);
     color: var(--highlight);
     border: 1px solid rgba(245, 158, 11, 0.25);
+  }
+
+  /* ================= ACHIEVEMENTS SECTION (LEETCODE) ================= */
+  .achievements-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 24px;
+  }
+  .achievement-hero-card {
+    background: var(--surface);
+    border: 1px solid var(--border);
+    backdrop-filter: blur(12px);
+    border-radius: var(--radius-lg);
+    padding: 34px;
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+    position: relative;
+    overflow: hidden;
+  }
+  .achievement-hero-card::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 3px;
+    background: linear-gradient(90deg, #F59E0B, #10B981, #06B6D4);
+  }
+  .achieve-header-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    gap: 16px;
+  }
+  .achieve-title {
+    font-size: 22px;
+    font-weight: 800;
+    margin-bottom: 4px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+  }
+  .lc-icon {
+    width: 28px;
+    height: 28px;
+    background: #FFA116;
+    border-radius: 6px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    color: #1A1A1A;
+    font-weight: 900;
+    font-size: 15px;
+  }
+  .achieve-desc {
+    color: var(--text-muted);
+    font-size: 15px;
+  }
+
+  .lc-stats-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 16px;
+  }
+  .lc-stat-box {
+    background: var(--bg-alt);
+    border: 1px solid var(--border);
+    border-radius: var(--radius-md);
+    padding: 18px;
+    text-align: center;
+    transition: all 0.2s;
+  }
+  .lc-stat-box:hover {
+    border-color: var(--border-hover);
+    transform: translateY(-2px);
+  }
+  .lc-stat-box.easy { border-top: 3px solid #00B8A3; }
+  .lc-stat-box.medium { border-top: 3px solid #FFC01E; }
+  .lc-stat-box.hard { border-top: 3px solid #FF375F; }
+  .lc-stat-box.total { border-top: 3px solid var(--primary); }
+
+  .lc-stat-count {
+    font-size: 32px;
+    font-weight: 800;
+    margin-bottom: 2px;
+  }
+  .lc-stat-box.easy .lc-stat-count { color: #00B8A3; }
+  .lc-stat-box.medium .lc-stat-count { color: #FFC01E; }
+  .lc-stat-box.hard .lc-stat-count { color: #FF375F; }
+  .lc-stat-box.total .lc-stat-count { color: var(--accent); }
+
+  .lc-stat-tier {
+    font-size: 12px;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    color: var(--text-muted);
+  }
+
+  .badges-row {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 12px;
+    align-items: center;
+    padding-top: 14px;
+    border-top: 1px solid rgba(255, 255, 255, 0.06);
+  }
+  .badge-item {
+    background: var(--bg-alt);
+    border: 1px solid var(--border);
+    padding: 8px 16px;
+    border-radius: 30px;
+    font-size: 13px;
+    font-weight: 600;
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+  }
+  .badge-item.gold {
+    border-color: rgba(245, 158, 11, 0.35);
+    color: #FBBF24;
+    background: rgba(245, 158, 11, 0.08);
+  }
+  .badge-item.cyan {
+    border-color: rgba(6, 182, 212, 0.35);
+    color: #06B6D4;
+    background: rgba(6, 182, 212, 0.08);
   }
 
   /* ================= FEATURED PROJECTS ================= */
@@ -1011,7 +1157,7 @@
   .contact-hero p {
     font-size: 16px;
     color: var(--text-muted);
-    max-width: 600px;
+    max-width: 620px;
     margin: 0 auto 36px;
     line-height: 1.7;
   }
@@ -1108,6 +1254,7 @@
       <ul class="nav-center" id="navLinks">
         <li><a href="#about">About</a></li>
         <li><a href="#experience">Experience</a></li>
+        <li><a href="#achievements">Achievements</a></li>
         <li><a href="#projects">Projects</a></li>
         <li><a href="#skills">Skills</a></li>
         <li><a href="#education">Education</a></li>
@@ -1130,30 +1277,34 @@
   <section class="hero-section">
     <div class="wrap">
       <div class="hero-badge-row">
-        <span class="pill">
+        <span class="pill pill-green">
           <span class="live-dot"></span>
-          <span>Fresher · Graduated June 2026</span>
+          <span>Immediate Joiner · Open to Remote / Hybrid / On-Site</span>
         </span>
-        <span class="pill" style="border-color:rgba(16,185,129,0.3); color:#34D399; background:rgba(16,185,129,0.1);">
-          Immediate Joiner · Open to Remote / Relocation
+        <span class="pill">
+          <span>B.Tech CSE (Data Science) 2026 Graduate</span>
+        </span>
+        <span class="pill pill-amber">
+          <span>14 Mos Internship (Betterhalf.ai + Techno Exponent)</span>
         </span>
       </div>
 
       <h1 class="hero-title">
-        Engineering <span class="gradient-text">Robust Backend Systems</span> &amp; Applied AI Solutions.
+        Engineering <span class="gradient-text">Scalable Data Platforms</span>, Backend APIs &amp; AI Systems.
       </h1>
 
       <p class="hero-subhead">
-        Software Engineer <span style="opacity:0.4;">|</span> Python Developer <span style="opacity:0.4;">|</span> AI/ML Systems
+        Software Engineer <span style="opacity:0.4;">|</span> Python Developer <span style="opacity:0.4;">|</span> AI/ML &amp; Data Platform Engineer
       </p>
 
       <p class="hero-description">
-        <strong>B.Tech CSE (Data Science) Graduate</strong> from Brainware University (Graduated June 2026).
-        Targeting entry-level / associate Software Engineering, Python Developer, and AI/ML roles with <strong>3 months of hands-on Cyber Security internship experience</strong> in Python vulnerability automation, complemented by production-grade distributed microservices (Flask, Django REST Framework, Docker, CI/CD) and predictive machine learning platforms.
+        <strong>2026 B.Tech CSE (Data Science) graduate</strong> with <strong>8 months as a Data &amp; Backend Platform Intern at Betterhalf.ai</strong> (AWS, Snowflake, DBT, Python) and a <strong>6-month Cyber Security internship</strong>.
+        Proven track record building high-throughput ELT pipelines, secure REST APIs &amp; microservices, and NLP / machine learning platforms with scikit-learn, Pandas, and Streamlit.
+        Strong foundational expertise in DSA (248 LeetCode problems solved), OOP, DBMS, and System Design.
       </p>
 
       <div class="hero-cta-row">
-        <a class="btn btn-primary" href="mailto:ansuvermakri37@gmail.com?subject=Software%20Engineer%20Opportunity%20-%20Ansu%20Kumari&amp;body=Hi%20Ansu%2C%0A%0AWe%20reviewed%20your%20portfolio%20and%20would%20love%20to%20connect%20regarding%20an%20engineering%20opportunity.%0A%0A">
+        <a class="btn btn-primary" href="mailto:ansuvermakri37@gmail.com?subject=Software%20Engineer%20Opportunity%20-%20Ansu%20Kumari&amp;body=Hi%20Ansu%2C%0A%0AWe%20reviewed%20your%20portfolio%20and%20would%20love%20to%20connect%20regarding%20an%20engineering%20role.%0A%0A">
           Get In Touch →
         </a>
         <a class="btn btn-secondary" href="https://drive.google.com/file/d/1n7fYY60irgldAEW0-G3lc5x59Nrj8ZJ7/view?usp=drive_link" target="_blank" rel="noopener">
@@ -1166,31 +1317,31 @@
           LinkedIn ↗
         </a>
         <a class="btn btn-secondary" href="https://leetcode.com/u/Ansu_kumari" target="_blank" rel="noopener">
-          LeetCode ↗
+          LeetCode (248 Solved) ↗
         </a>
       </div>
 
       <!-- Quick Metrics Strip -->
       <div class="metrics-strip">
         <div class="metric-card">
-          <div class="metric-num">50+</div>
-          <div class="metric-desc">Endpoints Scanned (SQLi Tool)</div>
+          <div class="metric-num">8 Mos</div>
+          <div class="metric-desc">Data &amp; Backend @ Betterhalf.ai</div>
+        </div>
+        <div class="metric-card">
+          <div class="metric-num">40%</div>
+          <div class="metric-desc">Data Latency Cut (AWS &amp; Snowflake)</div>
+        </div>
+        <div class="metric-card">
+          <div class="metric-num">248</div>
+          <div class="metric-desc">LeetCode Problems Solved</div>
+        </div>
+        <div class="metric-card">
+          <div class="metric-num">35%</div>
+          <div class="metric-desc">Fewer Pipeline Failures</div>
         </div>
         <div class="metric-card">
           <div class="metric-num">95%+</div>
-          <div class="metric-desc">Vulnerability Detection Rate</div>
-        </div>
-        <div class="metric-card">
-          <div class="metric-num">17K+</div>
-          <div class="metric-desc">Tweets Analyzed (NLP Pipeline)</div>
-        </div>
-        <div class="metric-card">
-          <div class="metric-num">40+</div>
-          <div class="metric-desc">Engineered Features (MLflow)</div>
-        </div>
-        <div class="metric-card">
-          <div class="metric-num">~70%</div>
-          <div class="metric-desc">Manual Audit Time Reduction</div>
+          <div class="metric-desc">SQLi Scanner Exploit Detection</div>
         </div>
         <div class="metric-card">
           <div class="metric-num">8.03</div>
@@ -1204,30 +1355,30 @@
   <section id="about">
     <div class="wrap">
       <div class="section-tag">About Candidate</div>
-      <h2 class="section-title">Background &amp; Philosophy</h2>
-      <p class="section-subtitle">A fresher mindset backed by hands-on engineering, security rigor, and data science.</p>
+      <h2 class="section-title">Background &amp; Expertise</h2>
+      <p class="section-subtitle">A data &amp; backend engineer blending platform scalability, algorithmic rigor, and defensive security.</p>
 
       <div class="about-grid">
         <div class="about-narrative">
           <p>
-            I graduated in <strong>June 2026 with a B.Tech in Computer Science &amp; Engineering (Data Science)</strong> from Brainware University, Kolkata.
-            As a fresh graduate with no prior full-time employment, I bring dedicated practical experience from a <strong>3-month Cyber Security internship</strong> where I engineered automated Python vulnerability scanning modules, combined with high-impact production-grade open-source systems.
+            I am a <strong>2026 Computer Science &amp; Engineering (Data Science) graduate</strong> from Brainware University, Kolkata, currently based in <strong>Gurugram, Haryana, India</strong>.
+            I bring <strong>14 cumulative months of production internship experience</strong> across high-scale data engineering, backend platforms, and cyber security automation.
           </p>
           <p>
-            My work centers around <strong>resilient backend architecture</strong> and <strong>intelligent data systems</strong>. I have architected decoupled microservices with Flask and Django REST Framework featuring stateless JWT and Role-Based Access Control behind an Nginx gateway, containerized with Docker and tested continuously via GitHub Actions.
+            During my 8 months as a <strong>Data &amp; Backend Platform Intern at Betterhalf.ai (Bangalore, On-Site)</strong>, I architected secure AWS ELT pipelines (S3, Lambda, RDS) feeding millions of user events into Snowflake, engineered layered DBT models cutting data latency by 40%, built Python/Node.js REST APIs with CloudWatch monitoring, and automated zero-downtime releases via GitHub Actions.
           </p>
           <p>
-            On the data science side, I engineered <strong>TweetLens</strong> (a hybrid NLP sentiment and crime classifier with ~80% accuracy across 17K+ samples deployed live on Streamlit) and <strong>CryptoOracle</strong> (a multi-asset time-series regression platform with 40+ quantitative indicators tracked in MLflow).
+            Prior to that, during my 6-month <strong>Cyber Security internship at Techno Exponent</strong>, I engineered an automated multi-threaded SQL injection scanner in Python across 50+ endpoints, reducing manual security testing cycles by ~70% with 95%+ precision and delivering client CVSS audit reports.
           </p>
           <p>
-            I am an <strong>immediate joiner</strong> looking for an entry-level or associate role as a <strong>Software Engineer, Python Developer, or AI/ML Engineer</strong> where I can collaborate with senior engineers, write robust unit-tested code, and solve meaningful real-world problems.
+            I have also solved <strong>248 problems on LeetCode</strong> (earning the 50 Days 2026 and Top SQL 50 badges), demonstrating algorithmic depth in DSA and query optimization. I am an <strong>immediate joiner</strong> open to remote, hybrid, on-site, and relocation opportunities.
           </p>
         </div>
 
         <div class="specs-card">
           <div class="specs-header">
             <span>Candidate Overview</span>
-            <span class="pill" style="font-size:11px;">Class of 2026</span>
+            <span class="pill pill-green" style="font-size:11px;">Immediate Joiner</span>
           </div>
           <div class="specs-list">
             <div class="specs-row">
@@ -1236,31 +1387,31 @@
             </div>
             <div class="specs-row">
               <span class="spec-label">Graduation</span>
-              <span class="spec-val">Graduated (June 2026)</span>
+              <span class="spec-val">Graduated June 2026</span>
             </div>
             <div class="specs-row">
               <span class="spec-label">CGPA</span>
               <span class="spec-val">8.03 / 10</span>
             </div>
             <div class="specs-row">
-              <span class="spec-label">Experience</span>
-              <span class="spec-val">3-Mo Cyber Security Intern</span>
-            </div>
-            <div class="specs-row">
-              <span class="spec-label">Availability</span>
-              <span class="spec-val" style="color:#10B981;">Immediate Joiner</span>
-            </div>
-            <div class="specs-row">
-              <span class="spec-label">Work Mode</span>
-              <span class="spec-val">Remote · Hybrid · On-Site</span>
-            </div>
-            <div class="specs-row">
               <span class="spec-label">Location</span>
-              <span class="spec-val">Kolkata, WB, India</span>
+              <span class="spec-val">Gurugram, Haryana, India</span>
+            </div>
+            <div class="specs-row">
+              <span class="spec-label">Experience</span>
+              <span class="spec-val">14 Mos (Betterhalf.ai + Techno)</span>
             </div>
             <div class="specs-row">
               <span class="spec-label">LeetCode</span>
-              <span class="spec-val"><a href="https://leetcode.com/u/Ansu_kumari" target="_blank" rel="noopener">@Ansu_kumari</a></span>
+              <span class="spec-val"><a href="https://leetcode.com/u/Ansu_kumari" target="_blank" rel="noopener">248 Solved (Top SQL 50)</a></span>
+            </div>
+            <div class="specs-row">
+              <span class="spec-label">Work Mode</span>
+              <span class="spec-val">Remote · Hybrid · On-Site · Relocate</span>
+            </div>
+            <div class="specs-row">
+              <span class="spec-label">Email</span>
+              <span class="spec-val"><a href="mailto:ansuvermakri37@gmail.com">ansuvermakri37@gmail.com</a></span>
             </div>
           </div>
         </div>
@@ -1272,44 +1423,137 @@
   <section id="experience">
     <div class="wrap">
       <div class="section-tag">Work Experience</div>
-      <h2 class="section-title">Internship Experience</h2>
-      <p class="section-subtitle">Real-world security testing, vulnerability detection algorithms, and client audit reporting.</p>
+      <h2 class="section-title">Production Experience</h2>
+      <p class="section-subtitle">Real-world impact across enterprise data platforms, ELT automation, backend microservices, and security testing.</p>
 
-      <article class="experience-card">
-        <div class="exp-top-row">
-          <div>
-            <div class="exp-role-title">Cyber Security Intern</div>
-            <div class="exp-company-sub">Techno Exponent · Kolkata, West Bengal (Hybrid)</div>
+      <div class="experience-timeline">
+
+        <!-- Role 1: Betterhalf.ai -->
+        <article class="experience-card">
+          <div class="exp-top-row">
+            <div>
+              <div class="exp-role-title">Software Engineer – Data &amp; Backend Platform Intern</div>
+              <div class="exp-company-sub">Betterhalf.ai · Bangalore, India (On-Site)</div>
+            </div>
+            <div class="exp-timeline-badge">
+              <span class="pill pill-green" style="margin-right:8px;">8 Months</span>
+              <span>Mar 2026 – Oct 2026</span>
+            </div>
           </div>
-          <div class="exp-timeline-badge">
-            <span class="pill" style="margin-right:8px;">Unpaid Internship</span>
-            <span>Sep 2025 – Nov 2025 (3 Months)</span>
+
+          <ul class="exp-bullets">
+            <li>
+              Built secure <strong>ELT pipelines on AWS (S3, Lambda, RDS)</strong> ingesting <strong>millions of user-event records into Snowflake</strong>; applied layered <strong>DBT models and star/snowflake schemas</strong> for growth and retention analytics, <strong>cutting data latency by 40%</strong>.
+            </li>
+            <li>
+              Engineered modular <strong>Python transformation scripts</strong> with schema validation, idempotency guards, and automated data quality checks; resolved incidents via systematic root-cause analysis (<strong>35% fewer pipeline failures</strong>) and built <strong>REST APIs (Python/Node.js)</strong> with CloudWatch monitoring.
+            </li>
+            <li>
+              Implemented <strong>CI/CD (GitHub Actions)</strong>, secrets management, and infrastructure-as-code for zero-downtime releases; led code reviews, added schema drift detection and test coverage gates, mentored juniors (<strong>30% faster onboarding</strong>), and partnered with product and data teams on MVP-first datasets.
+            </li>
+          </ul>
+
+          <div class="exp-metrics-pills">
+            <span class="exp-metric-pill">⚡ 40% Data Latency Cut</span>
+            <span class="exp-metric-pill">🛡️ 35% Fewer Pipeline Failures</span>
+            <span class="exp-metric-pill">☁️ AWS (S3, Lambda, RDS) + Snowflake + DBT</span>
+            <span class="exp-metric-pill">👥 30% Faster Junior Onboarding</span>
+            <span class="exp-metric-pill">📊 Millions of Events Ingested</span>
+          </div>
+        </article>
+
+        <!-- Role 2: Techno Exponent -->
+        <article class="experience-card">
+          <div class="exp-top-row">
+            <div>
+              <div class="exp-role-title">Cyber Security Intern</div>
+              <div class="exp-company-sub">Techno Exponent · Kolkata, West Bengal (Hybrid)</div>
+            </div>
+            <div class="exp-timeline-badge">
+              <span class="pill" style="margin-right:8px;">6 Months</span>
+              <span>Sep 2025 – Feb 2026</span>
+            </div>
+          </div>
+
+          <ul class="exp-bullets">
+            <li>
+              Built an automated <strong>SQL Injection scanner in Python covering 50+ endpoints</strong> with error-based, boolean-based, and time-based detection logic, achieving a verified <strong>95%+ detection rate</strong> on test targets and <strong>reducing manual testing time by ~70%</strong>.
+            </li>
+            <li>
+              Designed <strong>multi-threaded crawling and fuzzing modules</strong> with concurrent worker pools, reducing scan duration by <strong>~40% versus sequential execution</strong>.
+            </li>
+            <li>
+              Collaborated with security and development teams to validate vulnerabilities, debug detection issues, and verify fixes; authored and delivered structured <strong>CVSS-scored remediation reports for 3 client applications</strong>.
+            </li>
+          </ul>
+
+          <div class="exp-metrics-pills">
+            <span class="exp-metric-pill">⚡ ~70% Testing Time Saved</span>
+            <span class="exp-metric-pill">🎯 95%+ Exploit Detection Precision</span>
+            <span class="exp-metric-pill">🚀 40% Scan Acceleration (Threading)</span>
+            <span class="exp-metric-pill">🛡️ 3 Client CVSS Audit Reports</span>
+            <span class="exp-metric-pill">🔍 50+ Endpoints Audited</span>
+          </div>
+        </article>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= ACHIEVEMENTS SECTION (LEETCODE) ================= -->
+  <section id="achievements">
+    <div class="wrap">
+      <div class="section-tag">Competitive Coding &amp; Problem Solving</div>
+      <h2 class="section-title">Achievements &amp; Milestones</h2>
+      <p class="section-subtitle">Consistent problem solving across data structures, algorithms, and complex SQL queries.</p>
+
+      <div class="achievements-grid">
+        <div class="achievement-hero-card">
+          <div class="achieve-header-row">
+            <div>
+              <div class="achieve-title">
+                <span class="lc-icon">LC</span>
+                <span>LeetCode Problem Solving Record</span>
+              </div>
+              <div class="achieve-desc">
+                Solved <strong>248 algorithmic problems</strong> demonstrating mastery in Data Structures, Dynamic Programming, Graphs, and Advanced Database Queries.
+              </div>
+            </div>
+            <a class="btn btn-secondary btn-sm" href="https://leetcode.com/u/Ansu_kumari" target="_blank" rel="noopener">
+              View LeetCode Profile (@Ansu_kumari) ↗
+            </a>
+          </div>
+
+          <div class="lc-stats-grid">
+            <div class="lc-stat-box total">
+              <div class="lc-stat-count">248</div>
+              <div class="lc-stat-tier">Total Solved</div>
+            </div>
+            <div class="lc-stat-box easy">
+              <div class="lc-stat-count">96</div>
+              <div class="lc-stat-tier">Easy</div>
+            </div>
+            <div class="lc-stat-box medium">
+              <div class="lc-stat-count">124</div>
+              <div class="lc-stat-tier">Medium</div>
+            </div>
+            <div class="lc-stat-box hard">
+              <div class="lc-stat-count">28</div>
+              <div class="lc-stat-tier">Hard</div>
+            </div>
+          </div>
+
+          <div class="badges-row">
+            <span style="font-size:13px; font-weight:700; color:var(--text); margin-right:6px;">Official Badges Earned:</span>
+            <div class="badge-item gold">
+              <span>🏅 50 Days Badge 2026</span>
+            </div>
+            <div class="badge-item cyan">
+              <span>⚡ Top SQL 50 Badge</span>
+            </div>
           </div>
         </div>
-
-        <ul class="exp-bullets">
-          <li>
-            Engineered an automated <strong>SQL Injection vulnerability scanner in Python</strong> spanning 50+ endpoints, eliminating repetitive manual verification and <strong>cutting overall manual testing time by ~70%</strong>.
-          </li>
-          <li>
-            Implemented detection algorithms for <strong>error-based, boolean-blind, and time-delay attack vectors</strong>, achieving a verified <strong>95%+ detection rate</strong> on live test targets.
-          </li>
-          <li>
-            Designed <strong>multi-threaded crawling and fuzzing modules</strong> with concurrent worker pools, accelerating scan throughput by <strong>~40% compared to sequential execution</strong>.
-          </li>
-          <li>
-            Partnered closely with security leads and development teams to validate reported findings, diagnose detection edge-cases, and verify fixes; authored and delivered structured <strong>CVSS-scored remediation reports for 3 client web applications</strong>.
-          </li>
-        </ul>
-
-        <div class="exp-metrics-pills">
-          <span class="exp-metric-pill">⚡ ~70% Testing Time Saved</span>
-          <span class="exp-metric-pill">🎯 95%+ Exploit Detection Precision</span>
-          <span class="exp-metric-pill">🚀 40% Faster Multi-threaded Scans</span>
-          <span class="exp-metric-pill">🛡️ 3 Client CVSS Audit Reports</span>
-          <span class="exp-metric-pill">🔍 50+ Endpoints Audited</span>
-        </div>
-      </article>
+      </div>
     </div>
   </section>
 
@@ -1318,12 +1562,13 @@
     <div class="wrap">
       <div class="section-tag">Portfolio Showcase</div>
       <h2 class="section-title">Production Systems &amp; Projects</h2>
-      <p class="section-subtitle">Full-stack microservices, NLP intelligence pipelines, and predictive machine learning models.</p>
+      <p class="section-subtitle">Distributed microservices, enterprise ELT pipelines, and NLP intelligence engines.</p>
 
       <!-- Category Filter Pills -->
       <div class="projects-filter-nav" role="tablist" aria-label="Project filter">
-        <button class="filter-pill active" data-filter="all" role="tab" aria-selected="true">All Systems (3)</button>
+        <button class="filter-pill active" data-filter="all" role="tab" aria-selected="true">All Systems (4)</button>
         <button class="filter-pill" data-filter="backend" role="tab" aria-selected="false">Backend &amp; Microservices</button>
+        <button class="filter-pill" data-filter="data" role="tab" aria-selected="false">Data &amp; Cloud Platforms</button>
         <button class="filter-pill" data-filter="ai-ml" role="tab" aria-selected="false">AI / ML &amp; NLP</button>
         <button class="filter-pill" data-filter="security" role="tab" aria-selected="false">Cyber Security Tooling</button>
       </div>
@@ -1354,16 +1599,13 @@
 
           <ul class="proj-desc-bullets">
             <li>
-              Architected a decoupled microservices user management ecosystem consisting of a <strong>Flask auth service</strong> and a stateless <strong>Django REST Framework admin service</strong> routed behind a reverse-proxy <strong>Nginx API gateway</strong>.
+              Designed a microservices user management system (<strong>Flask auth service + stateless Django REST Framework admin service</strong>) behind an <strong>Nginx API gateway</strong>, with JWT authentication and RBAC enforced independently at each service.
             </li>
             <li>
-              Implemented stateless <strong>JWT authentication with Role-Based Access Control (RBAC)</strong> enforced independently across individual service boundaries for zero-trust isolation.
+              Applied <strong>OOP and modular design</strong> (service-layer classes, custom permission classes, typed exceptions) to decouple business logic from HTTP handling for testable code.
             </li>
             <li>
-              Applied <strong>OOP and modular software patterns</strong> (dedicated service layers, custom permission classes, typed domain exceptions) to strictly isolate business logic from HTTP transport layers.
-            </li>
-            <li>
-              Containerized all components using Docker/docker-compose and configured an automated <strong>GitHub Actions CI/CD pipeline</strong> that tests each service against live PostgreSQL instances and builds production images on every merge.
+              Containerized services with Docker and built a <strong>GitHub Actions CI/CD pipeline</strong> that tests each service against live PostgreSQL and builds production images on every merge.
             </li>
           </ul>
 
@@ -1405,7 +1647,58 @@
           </div>
         </article>
 
-        <!-- Project 2: TweetLens -->
+        <!-- Project 2: Betterhalf.ai Data Platform (Data Engineering) -->
+        <article class="project-item" data-category="data">
+          <div class="proj-head-row">
+            <div>
+              <div class="proj-title">Enterprise ELT &amp; Analytics Data Platform</div>
+              <div class="proj-category">Betterhalf.ai · Cloud Data Engineering</div>
+            </div>
+            <span class="pill pill-green">High-Throughput ELT</span>
+          </div>
+
+          <div class="tech-tags-row">
+            <span class="tech-tag">Snowflake</span>
+            <span class="tech-tag">DBT</span>
+            <span class="tech-tag">AWS S3</span>
+            <span class="tech-tag">AWS Lambda</span>
+            <span class="tech-tag">AWS RDS</span>
+            <span class="tech-tag">Python</span>
+            <span class="tech-tag">Star Schema</span>
+            <span class="tech-tag">CloudWatch</span>
+            <span class="tech-tag">GitHub Actions</span>
+          </div>
+
+          <ul class="proj-desc-bullets">
+            <li>
+              Engineered end-to-end ELT ingestion from <strong>AWS S3 and RDS into Snowflake data warehouse</strong>, processing millions of user events daily with automated schema drift detection.
+            </li>
+            <li>
+              Built layered <strong>DBT transformations (staging, intermediate, marts)</strong> with star and snowflake schemas, accelerating growth and retention analytics queries by <strong>40%</strong>.
+            </li>
+            <li>
+              Developed robust Python validation scripts with idempotency guards, reducing unhandled pipeline failures by <strong>35%</strong>.
+            </li>
+            <li>
+              Shipped Python and Node.js REST APIs with AWS CloudWatch metrics, automated deployment via GitHub Actions, and mentored new engineering hires.
+            </li>
+          </ul>
+
+          <div class="proj-bottom-row">
+            <div class="proj-stats-summary">
+              <div><b>40%</b>Latency Cut</div>
+              <div><b>35%</b>Fewer Incidents</div>
+              <div><b>Millions</b>Daily Events</div>
+            </div>
+            <div>
+              <a class="btn btn-secondary btn-sm" href="#experience">
+                View Betterhalf.ai Experience →
+              </a>
+            </div>
+          </div>
+        </article>
+
+        <!-- Project 3: TweetLens -->
         <article class="project-item" data-category="ai-ml">
           <div class="proj-head-row">
             <div>
@@ -1428,13 +1721,13 @@
 
           <ul class="proj-desc-bullets">
             <li>
-              Engineered an NLP analytics pipeline that classifies <strong>sentiment polarity, 7-class emotion</strong> (Joy, Sadness, Anger, Fear, Surprise, Love, Neutral), and <strong>6 cybercrime categories</strong> (phishing, scam, fraud, hate speech, harassment, misinformation) across <strong>17K+ tweets with ~80% accuracy</strong>.
+              Built an NLP pipeline that classifies <strong>sentiment, 7-class emotion, and 6 crime categories</strong> (phishing, scam, fraud, hate speech, harassment, misinformation) on <strong>17K+ tweets with ~80% accuracy</strong>.
             </li>
             <li>
-              Designed a customized <strong>hybrid ensemble sentiment model (0.7 × VADER + 0.3 × TextBlob)</strong> combined with a regex text preprocessing engine for URL removal, hashtag parsing, emoji mapping, and normalization.
+              Engineered a customized <strong>hybrid sentiment model (0.7 × VADER + 0.3 × TextBlob)</strong> with a text preprocessing module for URL removal, hashtag normalization, and emoji mapping.
             </li>
             <li>
-              Deployed an interactive <strong>Streamlit analytics dashboard</strong> with <strong>under 2-second inference latency</strong>, interactive Plotly visualization charts, n-gram word clouds, live tweet testing, and CSV export.
+              Deployed an interactive <strong>Streamlit analytics dashboard</strong> with <strong>under 2s inference</strong>, interactive Plotly charts, word clouds, a live tweet analyzer, and CSV export.
             </li>
           </ul>
 
@@ -1447,11 +1740,11 @@
             <div class="nlp-sim-wrapper">
               <div class="nlp-quick-presets">
                 <button class="preset-chip" data-sample="URGENT: Click here now to verify your account credentials or your access will be suspended!">Phishing Alert Preset</button>
-                <button class="preset-chip" data-sample="Thrilled to share our new microservices user management platform today! Huge thanks to the open-source community.">Joy / Launch Preset</button>
+                <button class="preset-chip" data-sample="Thrilled to share our new Snowflake ELT pipeline and microservices platform today! Huge milestone for our team.">Joy / Launch Preset</button>
                 <button class="preset-chip" data-sample="Database connection pool latency elevated to 320ms. Analyzing query execution plans in PostgreSQL.">Technical Diagnostic Preset</button>
               </div>
               <div class="nlp-form-row">
-                <input type="text" class="nlp-text-input" id="nlpTextInput" value="Thrilled to share our new microservices user management platform today! Huge thanks to the open-source community." placeholder="Enter any text to classify...">
+                <input type="text" class="nlp-text-input" id="nlpTextInput" value="Thrilled to share our new Snowflake ELT pipeline and microservices platform today! Huge milestone for our team." placeholder="Enter any text to classify...">
                 <button class="btn btn-primary btn-sm" id="nlpRunBtn">Classify Text</button>
               </div>
               <div class="nlp-metrics-output" id="nlpOutputBlock">
@@ -1492,72 +1785,6 @@
           </div>
         </article>
 
-        <!-- Project 3: CryptoOracle -->
-        <article class="project-item" data-category="ai-ml">
-          <div class="proj-head-row">
-            <div>
-              <div class="proj-title">CryptoOracle</div>
-              <div class="proj-category">Quantitative ML Price Prediction &amp; MLOps</div>
-            </div>
-            <span class="pill" style="color:#F59E0B; border-color:rgba(245,158,11,0.3); background:rgba(245,158,11,0.1);">Time-Series MLOps</span>
-          </div>
-
-          <div class="tech-tags-row">
-            <span class="tech-tag">Python</span>
-            <span class="tech-tag">scikit-learn</span>
-            <span class="tech-tag">Gradient Boosting</span>
-            <span class="tech-tag">Flask REST API</span>
-            <span class="tech-tag">MLflow</span>
-            <span class="tech-tag">APScheduler</span>
-            <span class="tech-tag">Chart.js</span>
-            <span class="tech-tag">CoinGecko API</span>
-          </div>
-
-          <ul class="proj-desc-bullets">
-            <li>
-              Engineered Gradient Boosting classification and regression pipelines for <strong>10 major cryptocurrencies</strong>, extracting and engineering <strong>40+ quantitative financial features</strong> (EMA, MACD, RSI, Bollinger Bands, ATR, On-Balance Volume, lag returns).
-            </li>
-            <li>
-              Validated predictive performance using <strong>5-fold walk-forward time-series cross-validation</strong> to strictly prevent future data leakage and lookahead bias.
-            </li>
-            <li>
-              Built a <strong>Flask REST API (7 endpoints)</strong> integrated with an interactive Chart.js frontend, automated 365-day historical data collection from CoinGecko, and scheduled daily model retraining via <strong>APScheduler</strong>.
-            </li>
-            <li>
-              Leveraged <strong>MLflow tracking</strong> to systematically log experiment parameters, R-squared values, per-coin accuracy, and model artifacts across iterative training runs.
-            </li>
-          </ul>
-
-          <div class="interactive-feature-card">
-            <div class="interactive-label">
-              <span>Quantitative Feature Engineering Highlights</span>
-              <span class="pill" style="font-size:10px;">40+ Engineered Signals</span>
-            </div>
-            <div class="tech-tags-row">
-              <span class="tech-tag" style="color:var(--accent);">EMA (9, 21, 50, 200 Days)</span>
-              <span class="tech-tag" style="color:var(--accent);">MACD &amp; Signal Histogram</span>
-              <span class="tech-tag" style="color:var(--accent);">RSI (14-Period Momentum)</span>
-              <span class="tech-tag" style="color:var(--accent);">Bollinger Bands (%B &amp; Width)</span>
-              <span class="tech-tag" style="color:var(--accent);">Average True Range (ATR)</span>
-              <span class="tech-tag" style="color:var(--accent);">On-Balance Volume (OBV)</span>
-              <span class="tech-tag" style="color:var(--accent);">Walk-Forward 5-Fold Splits</span>
-            </div>
-          </div>
-
-          <div class="proj-bottom-row">
-            <div class="proj-stats-summary">
-              <div><b>10</b>Assets Analyzed</div>
-              <div><b>40+</b>Technical Features</div>
-              <div><b>7</b>REST Endpoints</div>
-            </div>
-            <div>
-              <a class="btn btn-secondary btn-sm" href="https://github.com/ansukumari-tech/CryptoOracle" target="_blank" rel="noopener">
-                View Source Repository →
-              </a>
-            </div>
-          </div>
-        </article>
-
         <!-- Project 4: Security Scanner -->
         <article class="project-item" data-category="security">
           <div class="proj-head-row">
@@ -1578,13 +1805,13 @@
 
           <ul class="proj-desc-bullets">
             <li>
-              Developed during the <strong>Techno Exponent Cyber Security Internship</strong> to automatically discover SQL injection vulnerabilities across 50+ endpoints.
+              Built an automated SQL Injection scanner in Python covering <strong>50+ endpoints</strong> with error-based, boolean-based, and time-based detection logic.
             </li>
             <li>
-              Built heuristic modules identifying error-based, boolean-blind, and time-delay vulnerabilities with a <strong>95%+ precision rate</strong>.
+              Achieved a verified <strong>95%+ detection rate</strong> on test targets, cutting manual penetration testing cycles by <strong>~70%</strong>.
             </li>
             <li>
-              Employed Python multi-threading to parallelize network fuzzing requests, cutting scan duration by <strong>~40%</strong> versus sequential execution.
+              Multi-threaded crawling and fuzzing accelerated overall security assessment scans by <strong>~40%</strong>.
             </li>
           </ul>
 
@@ -1611,11 +1838,11 @@
     <div class="wrap">
       <div class="section-tag">Technical Competencies</div>
       <h2 class="section-title">Skills &amp; Technologies</h2>
-      <p class="section-subtitle">Core programming languages, backend frameworks, data science toolkits, and DevOps tools.</p>
+      <p class="section-subtitle">Core programming languages, backend frameworks, cloud data engineering, and DevOps tools.</p>
 
       <div class="skills-search-box">
         <span class="skills-search-icon">🔍</span>
-        <input type="text" class="skills-input" id="skillsInput" placeholder="Filter skills (e.g., Python, Docker, SQL, Flask, ML, DRF)..." aria-label="Search skills">
+        <input type="text" class="skills-input" id="skillsInput" placeholder="Filter skills (e.g., Snowflake, DBT, Python, AWS, Docker, SQL, Flask)..." aria-label="Search skills">
       </div>
 
       <div class="skills-card-grid">
@@ -1644,10 +1871,9 @@
             <span class="skill-pill">Flask</span>
             <span class="skill-pill">Django</span>
             <span class="skill-pill">Django REST Framework</span>
+            <span class="skill-pill">Node.js</span>
             <span class="skill-pill">RESTful APIs</span>
             <span class="skill-pill">Microservices</span>
-            <span class="skill-pill">Node.js</span>
-            <span class="skill-pill">Express.js</span>
             <span class="skill-pill">JWT</span>
             <span class="skill-pill">RBAC</span>
             <span class="skill-pill">Nginx</span>
@@ -1657,15 +1883,30 @@
           </div>
         </div>
 
-        <!-- AI / ML & Data -->
+        <!-- Data Engineering & Cloud -->
         <div class="skill-group">
           <div class="skill-group-head">
-            <span class="skill-group-name">AI / ML &amp; Data</span>
+            <span class="skill-group-name">Data Engineering &amp; Cloud</span>
+            <span class="pill pill-green">High Scale</span>
+          </div>
+          <div class="skill-tag-list">
+            <span class="skill-pill">Snowflake</span>
+            <span class="skill-pill">DBT</span>
+            <span class="skill-pill">ELT Pipelines</span>
+            <span class="skill-pill">Data Modeling (Star/Snowflake)</span>
+            <span class="skill-pill">Data Quality</span>
+            <span class="skill-pill">AWS (S3, Lambda, RDS)</span>
+          </div>
+        </div>
+
+        <!-- AI / ML & Analytics -->
+        <div class="skill-group">
+          <div class="skill-group-head">
+            <span class="skill-group-name">AI / ML &amp; Analytics</span>
             <span class="pill">Applied AI</span>
           </div>
           <div class="skill-tag-list">
             <span class="skill-pill">scikit-learn</span>
-            <span class="skill-pill">Gradient Boosting</span>
             <span class="skill-pill">NLP</span>
             <span class="skill-pill">VADER</span>
             <span class="skill-pill">TextBlob</span>
@@ -1674,59 +1915,44 @@
             <span class="skill-pill">Plotly</span>
             <span class="skill-pill">Streamlit</span>
             <span class="skill-pill">MLflow</span>
-            <span class="skill-pill">Time-Series Validation</span>
+            <span class="skill-pill">A/B Testing Metrics</span>
           </div>
         </div>
 
-        <!-- Cloud & DevOps -->
+        <!-- DevOps, Testing & Security -->
         <div class="skill-group">
           <div class="skill-group-head">
-            <span class="skill-group-name">Cloud &amp; DevOps</span>
-            <span class="pill">Infrastructure</span>
+            <span class="skill-group-name">DevOps, Testing &amp; Security</span>
+            <span class="pill pill-amber">Reliability</span>
           </div>
           <div class="skill-tag-list">
             <span class="skill-pill">Docker</span>
-            <span class="skill-pill">docker-compose</span>
             <span class="skill-pill">CI/CD (GitHub Actions)</span>
+            <span class="skill-pill">Infrastructure-as-Code</span>
             <span class="skill-pill">Git</span>
-            <span class="skill-pill">GitHub</span>
-            <span class="skill-pill">AWS (fundamentals)</span>
+            <span class="skill-pill">PyTest</span>
+            <span class="skill-pill">Postman</span>
+            <span class="skill-pill">SQL Injection Testing</span>
+            <span class="skill-pill">CVSS</span>
           </div>
         </div>
 
-        <!-- CS Fundamentals -->
+        <!-- CS Fundamentals & Practices -->
         <div class="skill-group">
           <div class="skill-group-head">
-            <span class="skill-group-name">CS Fundamentals</span>
-            <span class="pill">Academic</span>
+            <span class="skill-group-name">CS Fundamentals &amp; Practices</span>
+            <span class="pill">Foundations</span>
           </div>
           <div class="skill-tag-list">
-            <span class="skill-pill">Data Structures &amp; Algorithms</span>
+            <span class="skill-pill">DSA</span>
             <span class="skill-pill">OOP</span>
             <span class="skill-pill">Design Patterns</span>
             <span class="skill-pill">DBMS</span>
-            <span class="skill-pill">Operating Systems</span>
+            <span class="skill-pill">OS</span>
             <span class="skill-pill">System Design</span>
-          </div>
-        </div>
-
-        <!-- Testing & Practices -->
-        <div class="skill-group">
-          <div class="skill-group-head">
-            <span class="skill-group-name">Testing, SDLC &amp; AI Tools</span>
-            <span class="pill">Engineering</span>
-          </div>
-          <div class="skill-tag-list">
-            <span class="skill-pill">PyTest</span>
-            <span class="skill-pill">Supertest</span>
-            <span class="skill-pill">Postman</span>
-            <span class="skill-pill">Unit Testing</span>
-            <span class="skill-pill">Debugging</span>
             <span class="skill-pill">SDLC</span>
             <span class="skill-pill">Agile</span>
-            <span class="skill-pill">Technical Documentation</span>
             <span class="skill-pill">GitHub Copilot</span>
-            <span class="skill-pill">ChatGPT</span>
             <span class="skill-pill">Claude</span>
           </div>
         </div>
@@ -1740,23 +1966,23 @@
     <div class="wrap">
       <div class="section-tag">Academic Background</div>
       <h2 class="section-title">Education &amp; Certifications</h2>
-      <p class="section-subtitle">Academic qualifications and verified industry credentials.</p>
+      <p class="section-subtitle">Academic degree from Brainware University and verified industry certifications.</p>
 
       <div class="edu-certs-grid">
         <!-- Education Card -->
         <div class="edu-card">
-          <span class="pill" style="margin-bottom:14px;">Bachelor's Degree</span>
+          <span class="pill pill-green" style="margin-bottom:14px;">Bachelor's Degree</span>
           <h3>Bachelor of Technology (B.Tech)</h3>
           <div class="edu-dept">Computer Science &amp; Engineering (Data Science)</div>
           <div class="edu-inst">Brainware University · Kolkata, West Bengal, India</div>
 
           <div class="edu-badge-row">
             <span class="pill">Aug 2022 – Jun 2026</span>
-            <span class="pill" style="color:var(--highlight); border-color:rgba(245,158,11,0.3); background:rgba(245,158,11,0.1);">CGPA: 8.03 / 10</span>
+            <span class="pill pill-amber">CGPA: 8.03 / 10</span>
           </div>
 
           <p class="edu-summary">
-            Specialized curriculum in Data Structures, Relational Database Management Systems (RDBMS), Operating Systems, Object-Oriented Software Design, Machine Learning, Statistical Analysis, and Big Data Engineering.
+            Comprehensive curriculum in Data Structures &amp; Algorithms, Relational Database Management Systems (RDBMS), Operating Systems, Object-Oriented Software Design, Machine Learning, Statistical Modeling, and Big Data Engineering.
           </p>
         </div>
 
@@ -1804,12 +2030,12 @@
       <div class="contact-hero">
         <h2>Let's Connect &amp; Build Together</h2>
         <p>
-          I am actively looking for full-time <strong>Software Engineer, Python Developer, and AI/ML Engineer</strong> roles (B.Tech 2026 Graduate, available to join immediately).
-          Feel free to reach out via email, review my GitHub repositories, or schedule a technical discussion.
+          I am actively looking for full-time <strong>Software Engineer, Python Developer, AI/ML Engineer, and Data roles</strong>.
+          Immediate joiner, open to remote, hybrid, on-site, and relocation opportunities.
         </p>
 
         <div class="contact-action-btns">
-          <a class="btn btn-primary" href="mailto:ansuvermakri37@gmail.com?subject=Software%20Engineer%20Opportunity%20-%20Ansu%20Kumari&amp;body=Hi%20Ansu%2C%0A%0AWe%20reviewed%20your%20portfolio%20and%20would%20love%20to%20connect%20regarding%20an%20engineering%20role.%0A%0A">
+          <a class="btn btn-primary" href="mailto:ansuvermakri37@gmail.com?subject=Engineering%20Opportunity%20-%20Ansu%20Kumari&amp;body=Hi%20Ansu%2C%0A%0AWe%20reviewed%20your%20portfolio%20and%20would%20love%20to%20connect%20regarding%20an%20engineering%20role.%0A%0A">
             Send Email Directly →
           </a>
           <a class="btn btn-secondary" href="https://drive.google.com/file/d/1n7fYY60irgldAEW0-G3lc5x59Nrj8ZJ7/view?usp=drive_link" target="_blank" rel="noopener">
@@ -1822,7 +2048,7 @@
             GitHub Repositories ↗
           </a>
           <a class="btn btn-secondary" href="https://leetcode.com/u/Ansu_kumari" target="_blank" rel="noopener">
-            LeetCode ↗
+            LeetCode (248 Solved) ↗
           </a>
         </div>
 
@@ -1834,7 +2060,7 @@
             <span>📞 +91 9339908854</span>
           </div>
           <div class="copy-pill" style="cursor:default;">
-            <span>📍 Kolkata, West Bengal, India</span>
+            <span>📍 Gurugram, Haryana, India</span>
           </div>
         </div>
 
@@ -1851,8 +2077,6 @@
 <div id="toast" role="status" aria-live="polite">Copied to clipboard!</div>
 
 <script>
-
-
   // ================= MOBILE NAVIGATION =================
   const navToggle = document.getElementById('navToggle');
   const navLinks = document.getElementById('navLinks');
